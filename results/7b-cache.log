@@ -1,0 +1,41 @@
+== 7b-cache: pc-7b-cache-v10 (deepseek-ai/DeepSeek-R1-Distill-Qwen-7B)
+  sweep   512 trial 0: cold 187.2 ms -> warm 72.6 ms (cached 519/559)
+  sweep   512 trial 1: cold 187.4 ms -> warm 73.2 ms (cached 512/556)
+  sweep   512 trial 2: cold 187.9 ms -> warm 105.4 ms (cached 512/560)
+  sweep   512 trial 3: cold 187.7 ms -> warm 71.8 ms (cached 515/559)
+  sweep   512 trial 4: cold 187.6 ms -> warm 71.6 ms (cached 512/559)
+  sweep  1024 trial 0: cold 329.5 ms -> warm 72.7 ms (cached 1025/1071)
+  sweep  1024 trial 1: cold 329.3 ms -> warm 72.6 ms (cached 1024/1070)
+  sweep  1024 trial 2: cold 329.0 ms -> warm 72.7 ms (cached 1025/1067)
+  sweep  1024 trial 3: cold 329.0 ms -> warm 72.4 ms (cached 1024/1068)
+  sweep  1024 trial 4: cold 328.9 ms -> warm 72.8 ms (cached 1032/1073)
+  sweep  2048 trial 0: cold 530.8 ms -> warm 72.2 ms (cached 2055/2096)
+  sweep  2048 trial 1: cold 530.2 ms -> warm 73.8 ms (cached 2054/2093)
+  sweep  2048 trial 2: cold 529.7 ms -> warm 72.3 ms (cached 2048/2094)
+  sweep  2048 trial 3: cold 530.6 ms -> warm 71.8 ms (cached 2048/2094)
+  sweep  2048 trial 4: cold 530.3 ms -> warm 72.3 ms (cached 2048/2096)
+  sweep  4096 trial 0: cold 1018.0 ms -> warm 73.5 ms (cached 4101/4139)
+  sweep  4096 trial 1: cold 1017.7 ms -> warm 73.6 ms (cached 4100/4141)
+  sweep  4096 trial 2: cold 1017.3 ms -> warm 73.0 ms (cached 4111/4142)
+  sweep  4096 trial 3: cold 1017.8 ms -> warm 74.3 ms (cached 4099/4142)
+  sweep  4096 trial 4: cold 1017.7 ms -> warm 73.8 ms (cached 4096/4144)
+  sweep  8192 trial 0: cold 2093.0 ms -> warm 76.1 ms (cached 8193/8239)
+  sweep  8192 trial 1: cold 2090.9 ms -> warm 75.7 ms (cached 8193/8239)
+  sweep  8192 trial 2: cold 2099.8 ms -> warm 75.4 ms (cached 8192/8240)
+  sweep  8192 trial 3: cold 2092.0 ms -> warm 75.7 ms (cached 8199/8238)
+  sweep  8192 trial 4: cold 2094.0 ms -> warm 75.8 ms (cached 8192/8237)
+wrote /opt/ml/processing/output/7b-cache_sweep.csv
+  load c= 1: 0.24 req/s, TTFT p50 72.6 ms, hit 97.9%, errors 0
+  load c= 4: 0.91 req/s, TTFT p50 121.3 ms, hit 98.0%, errors 0
+  load c= 8: 1.79 req/s, TTFT p50 132.3 ms, hit 98.1%, errors 0
+  load c=16: 3.39 req/s, TTFT p50 181.6 ms, hit 98.2%, errors 0
+  load c=32: 6.26 req/s, TTFT p50 322.7 ms, hit 98.3%, errors 0
+wrote /opt/ml/processing/output/7b-cache_load.csv
+  evict N= 4: hit 99.5%
+  evict N= 6: hit 99.5%
+  evict N= 8: hit 99.4%
+  evict N=10: hit 24.9%
+  evict N=12: hit 0.0%
+  evict N=16: hit 0.0%
+  evict N=24: hit 0.0%
+wrote /opt/ml/processing/output/7b-cache_evict.csv

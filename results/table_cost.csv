@@ -1,0 +1,5 @@
+model,cache,c1_req_per_s,c1_usd_per_1M_req,peak_concurrency,peak_req_per_s,peak_usd_per_1M_req,peak_ttft_p95_ms,slo_concurrency,slo_req_per_s,slo_usd_per_1M_req
+1.5b,True,0.98,398.93,16,12.451,31.41,261.8,16,12.451,31.41
+1.5b,False,0.883,442.93,16,4.853,80.59,1992.5,4,2.469,158.4
+7b,True,0.238,1643.48,32,6.26,62.48,510.1,32,6.26,62.48
+7b,False,0.215,1821.27,32,1.557,251.17,14842.4,1,0.215,1821.27

@@ -1,0 +1,58 @@
+{
+  "1.5b-cache": {
+    "endpoint": "pc-15b-cache-v10",
+    "radix_eviction_policy": "lru",
+    "disable_radix_cache": "False",
+    "page_size": "1",
+    "attention_backend": "flashinfer",
+    "weights_gb": "3.51",
+    "avail_mem_gb": "18.24",
+    "kv_tokens": "560645",
+    "kv_k_gb": "7.49",
+    "kv_v_gb": "7.49",
+    "max_total_num_tokens": "560645",
+    "max_running_requests": "4096"
+  },
+  "1.5b-nocache": {
+    "endpoint": "pc-15b-nocache-v10",
+    "radix_eviction_policy": "lru",
+    "disable_radix_cache": "True",
+    "page_size": "1",
+    "attention_backend": "flashinfer",
+    "weights_gb": "3.51",
+    "avail_mem_gb": "18.24",
+    "kv_tokens": "560645",
+    "kv_k_gb": "7.49",
+    "kv_v_gb": "7.49",
+    "max_total_num_tokens": "560645",
+    "max_running_requests": "4096"
+  },
+  "7b-cache": {
+    "endpoint": "pc-7b-cache-v10",
+    "radix_eviction_policy": "lru",
+    "disable_radix_cache": "False",
+    "page_size": "1",
+    "attention_backend": "flashinfer",
+    "weights_gb": "14.35",
+    "avail_mem_gb": "7.39",
+    "kv_tokens": "77314",
+    "kv_k_gb": "2.06",
+    "kv_v_gb": "2.06",
+    "max_total_num_tokens": "77314",
+    "max_running_requests": "2416"
+  },
+  "7b-nocache": {
+    "endpoint": "pc-7b-nocache-v10",
+    "radix_eviction_policy": "lru",
+    "disable_radix_cache": "True",
+    "page_size": "1",
+    "attention_backend": "flashinfer",
+    "weights_gb": "14.35",
+    "avail_mem_gb": "7.39",
+    "kv_tokens": "77314",
+    "kv_k_gb": "2.06",
+    "kv_v_gb": "2.06",
+    "max_total_num_tokens": "77314",
+    "max_running_requests": "2416"
+  }
+}

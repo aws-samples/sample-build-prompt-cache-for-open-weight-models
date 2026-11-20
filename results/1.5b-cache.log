@@ -1,0 +1,42 @@
+== 1.5b-cache: pc-15b-cache-v10 (deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  sweep   512 trial 0: cold 54.9 ms -> warm 32.4 ms (cached 519/559)
+  sweep   512 trial 1: cold 59.8 ms -> warm 33.3 ms (cached 512/556)
+  sweep   512 trial 2: cold 54.9 ms -> warm 30.2 ms (cached 512/560)
+  sweep   512 trial 3: cold 55.7 ms -> warm 32.1 ms (cached 515/559)
+  sweep   512 trial 4: cold 54.6 ms -> warm 30.3 ms (cached 512/559)
+  sweep  1024 trial 0: cold 88.1 ms -> warm 32.3 ms (cached 1025/1071)
+  sweep  1024 trial 1: cold 84.0 ms -> warm 30.9 ms (cached 1024/1070)
+  sweep  1024 trial 2: cold 83.7 ms -> warm 32.1 ms (cached 1025/1067)
+  sweep  1024 trial 3: cold 86.1 ms -> warm 33.2 ms (cached 1024/1068)
+  sweep  1024 trial 4: cold 84.3 ms -> warm 34.4 ms (cached 1032/1073)
+  sweep  2048 trial 0: cold 150.2 ms -> warm 32.9 ms (cached 2055/2096)
+  sweep  2048 trial 1: cold 148.6 ms -> warm 34.5 ms (cached 2054/2093)
+  sweep  2048 trial 2: cold 149.1 ms -> warm 35.3 ms (cached 2048/2094)
+  sweep  2048 trial 3: cold 152.7 ms -> warm 35.4 ms (cached 2048/2094)
+  sweep  2048 trial 4: cold 150.7 ms -> warm 34.7 ms (cached 2048/2096)
+  sweep  4096 trial 0: cold 288.5 ms -> warm 38.4 ms (cached 4101/4139)
+  sweep  4096 trial 1: cold 284.2 ms -> warm 43.1 ms (cached 4100/4141)
+  sweep  4096 trial 2: cold 283.4 ms -> warm 38.9 ms (cached 4111/4142)
+  sweep  4096 trial 3: cold 285.1 ms -> warm 38.1 ms (cached 4099/4142)
+  sweep  4096 trial 4: cold 284.8 ms -> warm 38.0 ms (cached 4096/4144)
+  sweep  8192 trial 0: cold 595.5 ms -> warm 45.1 ms (cached 8193/8239)
+  sweep  8192 trial 1: cold 593.8 ms -> warm 53.7 ms (cached 8193/8239)
+  sweep  8192 trial 2: cold 603.3 ms -> warm 44.9 ms (cached 8192/8240)
+  sweep  8192 trial 3: cold 594.9 ms -> warm 53.4 ms (cached 8199/8238)
+  sweep  8192 trial 4: cold 603.5 ms -> warm 53.2 ms (cached 8192/8237)
+wrote /opt/ml/processing/output/1.5b-cache_sweep.csv
+  load c= 1: 0.98 req/s, TTFT p50 33.2 ms, hit 97.9%, errors 0
+  load c= 4: 3.50 req/s, TTFT p50 61.4 ms, hit 98.0%, errors 0
+  load c= 8: 6.67 req/s, TTFT p50 65.2 ms, hit 98.1%, errors 0
+  load c=16: 12.45 req/s, TTFT p50 81.7 ms, hit 98.2%, errors 0
+  load c=32: 10.50 req/s, TTFT p50 139.7 ms, hit 98.3%, errors 0
+wrote /opt/ml/processing/output/1.5b-cache_load.csv
+  evict N= 4: hit 99.5%
+  evict N= 6: hit 99.5%
+  evict N= 8: hit 99.4%
+  evict N=10: hit 99.5%
+  evict N=12: hit 99.4%
+  evict N=16: hit 99.5%
+  evict N=24: hit 99.5%
+wrote /opt/ml/processing/output/1.5b-cache_evict.csv

@@ -1,0 +1,34 @@
+== 7b-nocache: pc-7b-nocache-v10 (deepseek-ai/DeepSeek-R1-Distill-Qwen-7B)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  sweep   512 trial 0: cold 187.4 ms -> warm 186.7 ms (cached 0/559)
+  sweep   512 trial 1: cold 185.3 ms -> warm 188.0 ms (cached 0/556)
+  sweep   512 trial 2: cold 186.1 ms -> warm 187.1 ms (cached 0/560)
+  sweep   512 trial 3: cold 185.8 ms -> warm 187.5 ms (cached 0/559)
+  sweep   512 trial 4: cold 185.7 ms -> warm 187.4 ms (cached 0/559)
+  sweep  1024 trial 0: cold 334.2 ms -> warm 328.1 ms (cached 0/1071)
+  sweep  1024 trial 1: cold 325.6 ms -> warm 328.1 ms (cached 0/1070)
+  sweep  1024 trial 2: cold 325.4 ms -> warm 328.4 ms (cached 0/1067)
+  sweep  1024 trial 3: cold 325.8 ms -> warm 328.7 ms (cached 0/1068)
+  sweep  1024 trial 4: cold 326.0 ms -> warm 329.1 ms (cached 0/1073)
+  sweep  2048 trial 0: cold 525.7 ms -> warm 530.6 ms (cached 0/2096)
+  sweep  2048 trial 1: cold 525.0 ms -> warm 529.6 ms (cached 0/2093)
+  sweep  2048 trial 2: cold 524.4 ms -> warm 529.9 ms (cached 0/2094)
+  sweep  2048 trial 3: cold 524.4 ms -> warm 530.0 ms (cached 0/2094)
+  sweep  2048 trial 4: cold 525.1 ms -> warm 530.4 ms (cached 0/2096)
+  sweep  4096 trial 0: cold 1010.8 ms -> warm 1017.8 ms (cached 0/4139)
+  sweep  4096 trial 1: cold 1010.6 ms -> warm 1021.7 ms (cached 0/4141)
+  sweep  4096 trial 2: cold 1010.8 ms -> warm 1022.2 ms (cached 0/4142)
+  sweep  4096 trial 3: cold 1011.4 ms -> warm 1021.7 ms (cached 0/4142)
+  sweep  4096 trial 4: cold 1011.9 ms -> warm 1021.5 ms (cached 0/4144)
+  sweep  8192 trial 0: cold 2092.7 ms -> warm 2090.2 ms (cached 0/8239)
+  sweep  8192 trial 1: cold 2083.6 ms -> warm 2090.8 ms (cached 0/8239)
+  sweep  8192 trial 2: cold 2092.8 ms -> warm 2090.1 ms (cached 0/8240)
+  sweep  8192 trial 3: cold 2083.4 ms -> warm 2086.5 ms (cached 0/8238)
+  sweep  8192 trial 4: cold 2082.1 ms -> warm 2090.2 ms (cached 0/8237)
+wrote /opt/ml/processing/output/7b-nocache_sweep.csv
+  load c= 1: 0.21 req/s, TTFT p50 529.8 ms, hit 0.0%, errors 0
+  load c= 4: 0.64 req/s, TTFT p50 1915.3 ms, hit 0.0%, errors 0
+  load c= 8: 0.96 req/s, TTFT p50 2848.8 ms, hit 0.0%, errors 0
+  load c=16: 1.29 req/s, TTFT p50 4702.4 ms, hit 0.0%, errors 0
+  load c=32: 1.56 req/s, TTFT p50 8386.7 ms, hit 0.0%, errors 0
+wrote /opt/ml/processing/output/7b-nocache_load.csv
